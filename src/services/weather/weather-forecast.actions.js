@@ -1,4 +1,4 @@
-import * as api from './weather-forecast.api'
+import * as api from './api'
 /** ********************
  * Export action types *
  ***********************/

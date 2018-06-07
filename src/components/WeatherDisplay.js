@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function formatHour(hour) {
+export const formatHour = (hour) => {
   return hour.split(':')[0] + ':' + hour.split(':')[1]
 }
 
-export const WeatherCard = ({forecastByHour}) => (
+export const WeatherDisplay = ({forecastByHour}) => (
   <div className="level-item has-text-left">
     <div>
       <figure className="heading image is-48x48">
@@ -26,8 +26,8 @@ export const WeatherCard = ({forecastByHour}) => (
   </div>
 )
 
-WeatherCard.propTypes = {
+WeatherDisplay.propTypes = {
   forecastByHour: PropTypes.object.isRequired
 }
 
-export default WeatherCard
+export default WeatherDisplay

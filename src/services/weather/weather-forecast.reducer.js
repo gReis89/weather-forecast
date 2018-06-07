@@ -25,7 +25,7 @@ export const normalizeForecast = (forecast) => {
  * @param  {Object} action               dispatched action
  * @return {Object}                      a brand new state
  */
-const weatherReducer = (state = initialState, action) => {
+export const weatherReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.REQUEST:
       return {

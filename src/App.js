@@ -9,7 +9,7 @@ import WeatherForecast from './components/WeatherForecast'
 import * as weatherActions from './services/weather/weather-forecast.actions'
 import SpinnerLoader from './components/SpinnerLoader'
 
-class App extends Component {
+export class App extends Component {
   componentDidMount () {
     this.props.actions.fetchWeatherForecast()
   }
