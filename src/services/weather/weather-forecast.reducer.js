@@ -11,7 +11,7 @@ export const normalizeForecast = (forecast) => {
   let dailyForecast = []
   forecast.forEach((item, i) => {
     dailyForecast.push(item)
-    if (forecast[i+1] && item.dt_txt.split(' ')[0] !== forecast[i+1].dt_txt.split(' ')[0]) {
+    if (item.dt_txt.split(' ')[0] !== (forecast[i+1] && forecast[i+1].dt_txt.split(' ')[0])) {
       listByDay.push(dailyForecast)
       dailyForecast = []
     }
