@@ -7,6 +7,7 @@ import './App.css'
 import 'bulma/css/bulma.min.css'
 import WeatherForecast from './components/WeatherForecast'
 import * as weatherActions from './services/weather/weather-forecast.actions'
+import SpinnerLoader from './components/SpinnerLoader'
 
 class App extends Component {
   componentDidMount () {
@@ -31,13 +32,15 @@ class App extends Component {
             &nbsp; for Wipro
           </h5>
         </footer>
+        <SpinnerLoader isLoading={this.props.loading} />
       </div>
     )
   }
 }
 
 App.propTypes = {
-  forecast: PropTypes.array.isRequired
+  forecast: PropTypes.array.isRequired,
+  loading: PropTypes.number.isRequired
 }
 
 /**
@@ -45,7 +48,8 @@ App.propTypes = {
  */
 const mapStateToProps = (state, ownProps) => {
   return {
-    forecast: state.forecast
+    forecast: state.forecast,
+    loading: state.loading
   }
 }
 
