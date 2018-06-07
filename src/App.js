@@ -20,6 +20,7 @@ export class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Weather Forecast</h1>
+          <h2 className='sub-title'>Edinburgh - UK</h2>
         </header>
         <div className='container'>
           <WeatherForecast forecast={this.props.forecast} />

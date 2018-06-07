@@ -10,10 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Improvements
 
-- improve UI and UX
-- improve code coverage
-- add more weather information(pressure, humidity, wind)
-- allow users to choose the city to be forecasted
+- Improve UI and UX
+- Improve code coverage
+- Add more weather information(pressure, humidity, wind)
+- Allow users to choose the city to be forecasted
+- Error handling
 
 ## Developer Notes
 
