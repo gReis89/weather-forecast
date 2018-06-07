@@ -19,6 +19,12 @@ export const normalizeForecast = (forecast) => {
   return listByDay
 }
 
+/**
+ * Reducer for weather forecast
+ * @param  {Object} [state=initialState] current app state
+ * @param  {Object} action               dispatched action
+ * @return {Object}                      a brand new state
+ */
 const weatherReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.REQUEST:

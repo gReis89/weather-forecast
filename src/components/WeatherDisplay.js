@@ -10,7 +10,7 @@ export const WeatherCard = ({forecastByHour}) => (
     <div>
       <figure className="heading image is-48x48">
         <img className='weather-icon'
-        src={`http://openweathermap.org/img/w/${forecastByHour.weather[0].icon}.png`}
+        src={`https://openweathermap.org/img/w/${forecastByHour.weather[0].icon}.png`}
         alt="Weather icon" />
       </figure>
       <div>

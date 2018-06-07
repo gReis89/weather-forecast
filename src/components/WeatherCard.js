@@ -7,7 +7,7 @@ export const WeatherCard = ({forecast}) => (
   <div className='card box'>
     <header>
       <h5 className='title is-5'>
-        {moment(forecast[0].dt_txt.split(' ')[0], 'yyy-mm-dd').format('LLLL')}
+        {moment(forecast[0].dt_txt.split(' ')[0]).format('LLLL')}
       </h5>
     </header>
     <hr />
