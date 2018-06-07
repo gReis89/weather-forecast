@@ -1,14 +1,22 @@
+html, body { height: 100%; }
+
+body {
+  background: #F1FAEE;
+}
+
 .App {
   text-align: center;
+  background: #F1FAEE;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s linear;
+  animation-direction: alternate-reverse;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #1D3557;
   height: 150px;
   padding: 20px;
   color: white;
@@ -22,7 +30,45 @@
   font-size: large;
 }
 
+.App > .container { padding: 20px 0; }
+
+.caret-down { color: red; font-size: 12px; vertical-align: text-top; }
+.caret-up { color: green; font-size: 12px; vertical-align: text-top; }
+
+.weather-icon { margin-left: 20px; }
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 10px;
+  margin: 0 5px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 10px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.heart:before {
+  top: -5px;
+  left: 0;
+}
+
+.heart:after {
+  left: 5px;
+  top: 0;
 }
